@@ -1,25 +1,181 @@
+/* 'Style of landing page and quiz page */
+:root{
+--first-col: rgb(126, 123, 122);
+--second-col: rgb(231, 227, 227);
+--third-col: rgb(102, 196, 14);
+--background-col: rgb(53, 50, 50);
+}
+
 body{
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #333;
+  background-color: black;
+}
+.brand {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--first-col);
+  font-size: 25px;
+  margin-right: 1000px;
+}
+
+
+/* Style of Start over link */
+#list {
+  margin-left: -50px;
+  background-color: var(--first-col);
+}
+
+/* Style of countdown timer */
+h3 {
+  text-align: left;
+  color: var(--second-col);
+  background-color: var(--background-col);    
+  padding: 10px;
   }
-  .question{
-    font-weight: 600;
+
+/* Style of jumbotron */
+.rules-box {
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.rules{
+  font: size 20cm;;
+}
+
+.lead {
+  padding: 10px 10px 10px 0px;
+}
+
+#submit {
+  color: var(--third-col);
+  background-color: var(--first-col);
+}
+
+/* Style of quiz box background */
+.grid {
+  color: var(--third-col);
+  width: 600px;
+  height: 535px;
+  margin: 0 auto;
+  background-color: var(--background-col);
+  padding: 10px 50px 50px 50px;
+  border-radius: 15px;
+  border-width: 0.2em;
+  border:var(--background-col);
+}
+
+
+/* Style of buttons */
+.buttons {
+  margin-top: 30px;
+}
+
+nav{
+  background-color: var(--first-col);
+}
+.rules-box{
+  background-color: var(--first-col);
+}
+/* More style of buttons */
+#button0, #button1, #button2, #button3 {
+  background-color: var(--third-col);
+  height: 50px;
+  width: 525px;
+  font-size: 15px;
+  color: black;
+  border: var(--second-col);
+  border-radius: 0.75rem;
+  margin: 10px 100px 10px 0px;
+  padding: 10px, 10px;
+}
+
+/* Style of questions */
+.grid #question {
+  font-size: 20px;
+  color: var(--second-col);
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+/* Style of quiz name */
+#title {
+  color: var(--third-col);
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Style of footer showing progress of quiz */
+ #progress {
+     margin-top: 20px;
+     color: var(--third-col);
+     font-size: 13px;
+ }
+
+/* Style of page footer */
+.quiz-footer {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  margin-left: 650px;
+  padding: 10px;
+}
+
+/* Style of text Wall of Fame */
+.wall_of_fame {
+  text-align: center;
+  color: var(--third-col);
+  padding: 20px;
+} 
+
+/* Style of see leaderboard button */
+input[type=button] {
+ vertical-align: center;
+ padding: 5px;
+ margin-left: 700px;
+}
+
+/* Style of @media */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgray;
   }
-  .answers {
-      margin-bottom: 20px;
-  }
-  #submit{
-    font-family: sans-serif;
-    font-size: 20px;
-    background-color: #297;
-    color: #fff;
-    border: 0px;
-    border-radius: 3px;
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  #submit:hover{
-    background-color: #3a8;
-  }
+}
+
+/* This is css i just added */
+#container {
+  width: 600px;
+  height: auto;
+}
+
+.row {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  width: 75%;
+  line-height: 45px;
+}
+
+.score {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+}
+
+.row:nth-child(1) {
+  background: gold;
+}
+
+.row:nth-child(2) {
+  background: #070707;
+}
+
+.row:nth-child(3) {
+  background: #cd7f32;
+}
